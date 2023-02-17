@@ -1,0 +1,8 @@
+charming_place = Spot.create!(title: 'Charming Place', description: 'Come enjoy our .2 acre fenced-in back yard with your pup! We have a very friendly husky that likes to play with other dogs. Or, if your pup prefers to play solo, we can keep her inside for the duration of your visit.', price: 7)
+dogs_world = Spot.create!(title: 'Dogs world', description: 'I have quite a big yard for this area. It is fully enclosed by a 6 inches wooden fence.  Between the yard and the patio the total area is roughly 3200 sq feet. I have a rockery that dogs love to run up and down, juniper bushes, a large covered and uncovered patio area, a kiddie pool in the hot weather, 2 water bowls (and a hose for replenishing the water/pool if needed), lots of tennis balls and toys, and a large perimeter to sniff!', price: 15)
+
+charming_place.reviews.create!(author: 'Kate', body: 'Great yard with all the toys and even towels to clean your dog!')
+charming_place.reviews.create!(author: 'Olivia J.', body: 'Great spot! This is the second time we’ve visited and appreciate that it’s clean and has ample space for the dog to run or explore. Backyard is fully fenced and behind house, which is great for our dog that can be reactive.')
+
+dogs_world.reviews.create!(author: 'Courtney H', body: 'I’m Courtney and my mini schnauzer is James. We love long sniffy walks and lots of cuddles, topped off with treats.')
+dogs_world.reviews.create!(author: 'Libby O.', body: 'Marlow is a 10month old rescue who has a lot of energy to burn!')
