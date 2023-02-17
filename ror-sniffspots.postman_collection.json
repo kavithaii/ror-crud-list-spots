@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "af75b7d3-9b48-44fb-91d3-8cf2fb17a0f1",
+		"name": "ror-sniffspots",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/spots",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": {\n    \"type\": \"spots\",\n    \"attributes\": {\n      \"title\": \"Spaghetti Place\",\n      \"description\": \"789 Third Street\",\n      \"price\": 10\n    }\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/spots",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"spots"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/spots",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/spots",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"spots"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/reviews",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": {\n    \"type\": \"reviews\",\n    \"attributes\": {\n      \"author\": \"Alexa\",\n      \"body\": \"Very nice fully fenced yard for my dog to romp and play. Area was clean and hosts were very friendly and welcoming. \"\n    },\n    \"relationships\": {\n      \"spot\": {\n        \"data\": {\n          \"type\": \"spots\",\n          \"id\": \"3\"\n        }\n      }\n    }\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/reviews",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/spots/1/reviews/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/spots/1/reviews/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"spots",
+						"1",
+						"reviews",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
