@@ -155,3 +155,27 @@ To test the POST response of **spot api**
 Run `$rspec ./spec/requests/spots/create_spec.rb` 
 
 Note - Make sure test fails. 
+
+## Schema
+
+Create model 
+
+`$ rails g model spot title:string description:string 'price:decimal{8,2}' list_of_images: string`
+
+`$ rails g model review author:string body:text spot_id:integer`
+
+Establish a one-many relationship between the primary and dependent models
+
+In app/models/spot.rb, add these lines inside the class definition:
+
+```
+# A spot can have many reviews
+has_many :reviews
+```
+
+In app/models/review.rb, add these lines inside the class definition:
+
+```
+# Each review is linked to a spot through spot_id field
+belongs_to :spot
+```
