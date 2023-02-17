@@ -4,6 +4,8 @@ Clone repo
 
 Run `$bundle install`
 
+Update Postgresql db credentials in config/database.yml
+
 Run `$rake db:create`, `$rake db:migrate`, then `$rake db:seed`
 
 ## Running
