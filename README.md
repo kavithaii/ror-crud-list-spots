@@ -2,15 +2,15 @@
 
 Clone repo
 
-Run bundle install
+Run `$bundle install`
 
-Run rake db:create, rake db:migrate, then rake db:seed
+Run `$rake db:create`, `$rake db:migrate`, then `$rake db:seed`
 
 ## Running
 
 Start the Rails server 
 
-Run rails s 
+Run `$rails s`
 
 Hit http://localhost:3000/spots/
 
