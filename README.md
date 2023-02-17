@@ -73,10 +73,10 @@ In body add the following:
 
 To do health check
 
-Run rspec ./spec/requests/health_spec.rb
+Run `$rspec ./spec/requests/health_spec.rb`
 
 To test the POST response of **spot api**
 
-Run rspec ./spec/requests/spots/create_spec.rb 
+Run `$rspec ./spec/requests/spots/create_spec.rb` 
 
 Note - Make sure test fails. 
